@@ -9,7 +9,9 @@
 
 <body>
     <script>
-        fetch("https://api-book-67vp6mvso-marcosfrancomarinho.vercel.app/").then(res => console.log(res))
+        fetch("http://localhost:3001/").then(res => res.json()).then(data => {
+            console.log(data)
+        })
     </script>
 </body>
 

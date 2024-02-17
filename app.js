@@ -3,7 +3,6 @@ const cors = require("cors")
 const path = require("path")
 const PORT = process.env.PORT || 3001
 const app = express()
-app.use(express.json())
 app.use(cors())
 app.get("/", (req, res) => {
     res.type('json')
